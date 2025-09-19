@@ -14,6 +14,7 @@ print(id(your_book))
 print(id(other_book)) # your_book & other_book's id is same
 
 # so if other_book is changed, your_book also changed in automate
+# (but if copied like 'other_book = your_book[0:4]', don't change at all
 other_book[0] = 2025
 print(my_book)
 print(your_book)
