@@ -48,11 +48,12 @@ print(ds_data)
 
 ds_top20 = ds_data.nlargest(20)
 
-# 2. 인덱스(국가명)를 한글로 변경
+# 인덱스(국가명)를 한글로 변경
 ds_top20_korean = ds_top20.rename(index=country_map)
 
-# 3. 한글로 변경된 데이터로 차트 그리기
+# 한글로 변경된 데이터로 차트 그리기
 ds_top20_korean.plot.pie(figsize=(10,10)) #인치단위
 
 plt.tight_layout()
+
 plt.show()
